@@ -1,0 +1,12 @@
+{
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "extends": "tsconfig/vue.json",
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ddd/*": ["src/*"]
+    },
+  },
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
